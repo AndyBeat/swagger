@@ -91,6 +91,7 @@ export interface SwaggerCustomOptions {
    * URL(s) of custom JavaScript files to load in Swagger UI page.
    */
   customJs?: string | string[];
+  customPreLoadJs?: string | string[];
 
   /**
    * Custom JavaScript scripts to load in Swagger UI page.

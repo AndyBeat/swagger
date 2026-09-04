@@ -73,6 +73,7 @@ export function buildSwaggerHTML(
   const {
     customCss = '',
     customJs = '',
+    customPreLoadJs = '',
     customJsStr = '',
     customfavIcon = false,
     customSiteTitle = 'Swagger UI',
@@ -99,6 +100,9 @@ export function buildSwaggerHTML(
     .replace('<% favIconString %>', () => favIconString)
     .replace(/<% baseUrl %>/g, () => baseUrl)
     .replace('<% customJs %>', () => toTags(customJs, toExternalScriptTag))
+    .replace('<% customPreLoadJs %>', () =>
+      toTags(customPreLoadJs, toExternalScriptTag)
+    )
     .replace('<% customJsStr %>', () => toTags(customJsStr, toInlineScriptTag))
     .replace('<% customCssUrl %>', () =>
       toTags(customCssUrl, toExternalStylesheetTag)

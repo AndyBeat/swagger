@@ -30,6 +30,7 @@ export const htmlTemplateString = `
       background: #fafafa;
     }
   </style>
+  
 </head>
 
 <body>
@@ -70,6 +71,7 @@ export const htmlTemplateString = `
 
 <div id="swagger-ui"></div>
 
+<% customPreLoadJs %>
 <script src="<% baseUrl %>swagger-ui-bundle.js"> </script>
 <script src="<% baseUrl %>swagger-ui-standalone-preset.js"> </script>
 <script src="<% baseUrl %>swagger-ui-init.js"> </script>
