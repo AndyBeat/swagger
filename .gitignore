@@ -6,6 +6,7 @@ node_modules
 /.awcache
 /.vscode
 .history
+/.ai
 
 # misc
 npm-debug.log
